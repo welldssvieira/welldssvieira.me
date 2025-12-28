@@ -44,7 +44,7 @@
                 <h1>Artigos recentes</h1>
             </header>
 
-            <article>
+            <article onclick="mudarPagina()">
                 <header>
                     <span class="tag">
                         Novo
@@ -107,6 +107,11 @@
             const anoAtual = new Date();
 
             ano.innerHTML = anoAtual.getFullYear();
+        }
+
+        function mudarPagina() {
+            const artigo = document.getElementsByTagName('article')[0];
+            window.location.href = '/src/pages/article_28_12_2025.html'
         }
     </script>
 </body>

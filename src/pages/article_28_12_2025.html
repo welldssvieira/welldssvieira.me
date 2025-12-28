@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/article_28_12_2025.css">
+    <title>Decidi recomeçar a minha vida do zero, de forma minimalista e segura.</title>
+</head>
+
+<body>
+    <main>
+        <div id="retornar">
+            <button class="button_voltar" onclick="retornarPagina()">
+                <img src="/public/assets/icon/Icone_setaVoltar.svg" alt="Voltar a página anterior.">
+            </button>
+        </div>
+
+        <header>
+            <div class="titulos">
+                <h1>Existem muitas variações de passagens.</h1>
+                <h2>Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório.</h2>
+            </div>
+            <div class="dados_artigo">
+                <div class="autor">
+                    <div class="foto_usuario">
+                        <img src="/public/assets/images/foto_profissional.png" alt="">
+                    </div>
+                    <div class="informacoes">
+                        <div class="informacoes_autor">
+                            <div class="nome_autor">
+                                <p>Wellington D.S Vieira</p>
+                            </div>
+                            <div class="selo_verificado">
+                                <img src="/public/assets/icon/Icone_verificado.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="data_publicacao">
+                            <p>Outubro 12, 2025</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tempo_leitura">
+                    <p>9 min. de leitura</p>
+                </div>
+            </div>
+        </header>
+
+        <figure>
+            <img src="/public/assets/images/foto.png" alt="">
+            <figcaption>Descrição da imagem e créditos do autor</figcaption>
+        </figure>
+
+        <article id="artigo">
+            <h2>É um fato comprovado que o leitor se distrai com o conteúdo legível.</h2>
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos. O Lorem Ipsum
+                tem sido a simulação de texto padrão da indústria tipográfica e de impressos desde o século XVI, quando
+                um impressor desconhecido pegou uma galera de tipos e os embaralhou para criar um livro de espécimes de
+                tipos. Ele sobreviveu não apenas a cinco séculos, mas também à transição para a composição eletrônica,
+                permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento das folhas
+                Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com softwares de editoração eletrônica
+                como o Aldus PageMaker, incluindo versões do Lorem Ipsum.</p>
+            <h2>É um fato comprovado que o leitor se distrai com o conteúdo legível.</h2>
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos. O Lorem Ipsum
+                tem sido a simulação de texto padrão da indústria tipográfica e de impressos desde o século XVI, quando
+                um impressor desconhecido pegou uma galera de tipos e os embaralhou para criar um livro de espécimes de
+                tipos. Ele sobreviveu não apenas a cinco séculos, mas também à transição para a composição eletrônica,
+                permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento das folhas
+                Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com softwares de editoração eletrônica
+                como o Aldus PageMaker, incluindo versões do Lorem Ipsum.</p>
+
+            <div class="tags">
+                <span class="tag">
+                    Produtividade
+                </span>
+                <span class="tag">
+                    Organização
+                </span>
+                </span>
+                <span class="tag">
+                    Minimalismo
+                </span>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>© &nbsp; <span id="ano-atual">2025</span> &nbsp;Syncro Horizon. Todos os direitos reservados.</footer>
+
+    <script>
+        // Função que atualiza a data no Footer.
+        window.onload = function () {
+            const ano = document.getElementById("ano-atual");
+            const anoAtual = new Date();
+
+            ano.innerHTML = anoAtual.getFullYear();
+        }
+
+        function retornarPagina() {
+            const botao = document.getElementsByClassName("button_voltar")[0];
+            window.location.href = '/index.html'
+        }
+    </script>
+</body>
+
+</html>
