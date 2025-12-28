@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <title>Blog - welldssvieira</title>
+</head>
+
+<body>
+    <main>
+        <section id="apresentacao">
+            <header>
+                <div class="foto_usuario">
+                    <img src="/public/assets/images/foto_profissional.png" alt="Foto do Wellington, autor da página.">
+                </div>
+                <div class="tag_agenda">
+                    <span class="icone">
+
+                    </span>
+                    <p class="status_agenda">Agenda aberta</p>
+                </div>
+            </header>
+
+            <div class="apresentacao">
+                <h1>
+                    Me chamo Wellington!
+                </h1>
+                <h2>
+                    Desenvolvedor e designer de interfaces, focado em transformar desafios complexos em soluções simples
+                    e impactantes.
+                </h2>
+                <hr>
+                <p>
+                    Estou vivendo um momento de recomeço, deixando para trás velhos hábitos e me reinventando. É uma
+                    jornada de autodescoberta, e convido você a me acompanhar nesse processo de transformação.
+                </p>
+            </div>
+        </section>
+
+        <section id="artigos_recentes">
+            <header>
+                <h1>Artigos recentes</h1>
+            </header>
+
+            <article>
+                <header>
+                    <span class="tag">
+                        Novo
+                    </span>
+                    <div class="titulo_artigo">
+                        <h2>Decidi recomeçar a minha vida do zero, de forma minimalista e segura.</h2>
+                    </div>
+                </header>
+
+                <div class="dados_artigo">
+                    <div class="dado">
+                        <div class="icon">
+                            <img src="public/assets/icon/Icone_calendar.svg" alt="Data de publicação">
+                        </div>
+                        <div class="data_publicacao">
+                            <p>12 de outubro, 2025</p>
+                        </div>
+                    </div>
+                    <div class="dado">
+                        <div class="icon">
+                            <img src="public/assets/icon/Icone_timer.svg" alt="Tempo de leitura">
+                        </div>
+                        <div class="tempo_leitura">
+                            <p>5 min. de leitura</p>
+                        </div>
+                    </div>
+                    <div class="dado">
+                        <div class="icon">
+                            <img src="public/assets/icon/Icone_visualizacoes.svg" alt="Quantidade de visualizações">
+                        </div>
+                        <div class="quantidade_visualizacoes">
+                            <p>100 visualizações</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tags">
+                    <span class="tag">
+                        Produtividade
+                    </span>
+                    <span class="tag">
+                        Organização
+                    </span>
+                    </span>
+                    <span class="tag">
+                        Minimalismo
+                    </span>
+                </div>
+            </article>
+
+            <button class="button_todosArtigos"> Todos os artigos </button>
+        </section>
+    </main>
+    <footer>© &nbsp; <span id="ano-atual">2025</span> &nbsp;Syncro Horizon. Todos os direitos reservados.</footer>
+
+    <script>
+        // Função que atualiza a data no Footer.
+        window.onload = function () {
+            const ano = document.getElementById("ano-atual");
+            const anoAtual = new Date();
+
+            ano.innerHTML = anoAtual.getFullYear();
+        }
+    </script>
+</body>
+
+</html>

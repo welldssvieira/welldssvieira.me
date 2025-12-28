@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-color-gray: #262626;
+    --color-gray-90: #2A2A2A;
+    --color-gray-80: #404040;
+    --color-gray-70: #595959;
+    --color-gray-60: #737373;
+    --color-gray-50: #8C8C8C;
+    --color-gray-20: #f5f5f5;
+}
+
+h1 {
+    color: var(--brand-color-gray);
+}
+
+h2 {
+    color: var(--color-gray-70);
+}
+
+p {
+    color: var(--color-gray-50);
+}
+
+hr {
+    border-color: var(--color-gray-20);
+}
+
+
+::selection {
+    background-color: #262626;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Geist", sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 150px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#apresentacao {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+#apresentacao header {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.foto_usuario,
+.foto_usuario img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.foto_usuario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.tag_agenda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 0px;
+    border: 1px solid var(--color-gray-70);
+    border-radius: 50px;
+    width: 150px;
+}
+
+.tag_agenda .status_agenda {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--color-gray-80);
+}
+
+.tag_agenda .icone {
+    width: 13px;
+    height: 13px;
+    background-color: #57DD7B;
+    border-radius: 50px;
+    margin-right: 11px;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+}
+
+.apresentacao h1 {
+    margin: 20px 0 0 0;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -2px;
+    font-weight: 600;
+    color: var(--brand-color-gray);
+}
+
+.apresentacao h2 {
+    margin: 10px 0 0 0;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.apresentacao hr {
+    margin: 40px 0;
+}
+
+.apresentacao p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.10px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+footer {
+    width: 50%;
+    height: 100px;
+    margin-top: 150px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    color: var(--color-gray-80);
+}
+
+#artigos_recentes {
+    margin-top: 100px;
+}
+
+article {
+    border: 1px solid var(--color-gray-20);
+    padding: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#artigos_recentes header {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#artigos_recentes header .tag {
+    padding: 2px 10px;
+    background-color: rgba(87, 221, 123, 0.5);
+    border-radius: 5px;
+    color: #136E2F;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+
+#artigos_recentes header .titulo_artigo h2 {
+    margin: 10px 0 0 0;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    font-weight: 500;
+}
+
+#artigos_recentes .dados_artigo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#artigos_recentes .dados_artigo .dado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#artigos_recentes .dados_artigo .dado .icon {
+    margin-right: 10px;
+}
+
+#artigos_recentes .tags {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 40px 0 0 0;
+}
+
+#artigos_recentes .tags .tag {
+    margin-right: 10px;
+    border-radius: 50px;
+    border: 1px solid var(--color-gray-20);
+    padding: 2px 15px;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-weight: 400;
+}
+
+.button_todosArtigos {
+    width: 100%;
+    height: 85px;
+    border: 1px solid var(--color-gray-20);
+    border-radius: 20px;
+    background-color: #ffffff;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    color: var(--color-gray-60);
+    margin-top: 30px;
+    cursor: pointer;
+}
