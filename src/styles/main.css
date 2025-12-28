@@ -112,6 +112,7 @@ main {
     background-color: #57DD7B;
     border-radius: 50px;
     margin-right: 11px;
+    animation: usuarioOnline 1s normal infinite;
 }
 
 .apresentacao {
@@ -180,6 +181,7 @@ article {
     line-height: 20px;
     letter-spacing: 0;
     font-weight: 500;
+    animation: novoArtigo 1s normal infinite;
 }
 
 #artigos_recentes header .titulo_artigo h2 {
@@ -242,4 +244,65 @@ article {
     color: var(--color-gray-60);
     margin-top: 30px;
     cursor: pointer;
+}
+
+
+footer {
+    width: 50%;
+    height: 100px;
+    margin-top: 150px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    color: var(--color-gray-80);
+}
+
+
+
+@keyframes novoArtigo {
+    0% {
+        opacity: 1;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+@keyframes usuarioOnline {
+    0% {
+        opacity: 1;
+        transform: scale(0.5);
+    }
+
+    50% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+    article {
+        padding: 20px;
+    }
+
+    .dado .icon img {
+        width: 20px;
+    }
+
+    .dado p {
+        font-size: 12px;
+    }
 }

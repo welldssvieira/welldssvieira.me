@@ -238,3 +238,27 @@ footer {
     text-align: center;
     color: var(--color-gray-80);
 }
+
+
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+    article {
+        padding: 20px;
+    }
+
+    .dado .icon img {
+        width: 20px;
+    }
+
+    .dado p {
+        font-size: 12px;
+    }
+
+    figure img {
+        height: 300px;
+    }
+
+}
