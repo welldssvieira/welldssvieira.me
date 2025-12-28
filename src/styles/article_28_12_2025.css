@@ -227,6 +227,7 @@ figcaption {
     letter-spacing: 0px;
     font-weight: 400;
     color: var(--color-gray-50);
+    margin: 5px 5px 5px 0;
 }
 
 footer {
@@ -259,6 +260,10 @@ footer {
 
     figure img {
         height: 300px;
+    }
+
+    footer {
+        width: 90%;
     }
 
 }

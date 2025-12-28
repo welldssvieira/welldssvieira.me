@@ -220,7 +220,7 @@ article {
 }
 
 #artigos_recentes .tags .tag {
-    margin-right: 10px;
+    margin: 5px 5px 5px 0;
     border-radius: 50px;
     border: 1px solid var(--color-gray-20);
     padding: 2px 15px;
@@ -303,6 +303,27 @@ footer {
     }
 
     .dado p {
-        font-size: 12px;
+        font-size: 14px;
+    }
+
+    #artigos_recentes .dados_artigo {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #artigos_recentes header .titulo_artigo h2 {
+        font-size: 23px;
+    }
+
+    .dado {
+        margin-top: 10px;
+    }
+
+    .button_todosArtigos{ font-size: 15px;}
+
+    footer {
+        width: 90%;
     }
 }

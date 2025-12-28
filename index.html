@@ -44,7 +44,7 @@
                 <h1>Artigos recentes</h1>
             </header>
 
-            <article onclick="mudarPagina()">
+            <article onclick="mudarPagina() , visualizacoesArtigo()">
                 <header>
                     <span class="tag">
                         Novo
@@ -71,14 +71,14 @@
                             <p>5 min. de leitura</p>
                         </div>
                     </div>
-                    <div class="dado">
+                    <!-- <div class="dado">
                         <div class="icon">
                             <img src="public/assets/icon/Icone_visualizacoes.svg" alt="Quantidade de visualizações">
                         </div>
                         <div class="quantidade_visualizacoes">
-                            <p>100 visualizações</p>
+                            <p>0 visualizações</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="tags">
@@ -95,24 +95,44 @@
                 </div>
             </article>
 
-            <button class="button_todosArtigos"> Todos os artigos </button>
+            <!-- <button class="button_todosArtigos"> Todos os artigos </button> -->
         </section>
     </main>
     <footer>© &nbsp; <span id="ano-atual">2025</span> &nbsp;Syncro Horizon. Todos os direitos reservados.</footer>
 
     <script>
-        // Função que atualiza a data no Footer.
         window.onload = function () {
             const ano = document.getElementById("ano-atual");
             const anoAtual = new Date();
+            const visualizacaoLeitores = document.querySelector(".quantidade_visualizacoes p");
 
             ano.innerHTML = anoAtual.getFullYear();
-        }
+
+            // // Recupera o valor salvo ou inicia em 0
+            // let totalVisualizacoes = Number(localStorage.getItem('totalVisualizacoes')) || 0;
+
+            // visualizacaoLeitores.innerHTML = totalVisualizacoes;
+        };
+
+        // function visualizacoesArtigo() {
+        //     const visualizacaoLeitores = document.querySelector(".quantidade_visualizacoes p");
+
+        //     let totalVisualizacoes = Number(localStorage.getItem('totalVisualizacoes')) || 0;
+
+        //     totalVisualizacoes++;
+
+        //     localStorage.setItem('totalVisualizacoes', totalVisualizacoes);
+        //     visualizacaoLeitores.innerHTML = totalVisualizacoes;
+        // }
+
 
         function mudarPagina() {
             const artigo = document.getElementsByTagName('article')[0];
             window.location.href = '/src/pages/article_28_12_2025.html'
         }
+
+
+
     </script>
 </body>
 
