@@ -176,7 +176,7 @@ figure {
 figure img {
     width: 100%;
     height: 450px;
-    border-radius: 20px;
+    border-radius: 10px;
     object-fit: cover;
 }
 
@@ -187,25 +187,27 @@ figcaption {
     letter-spacing: -1;
     line-height: 20px;
     color: var(--color-gray-40);
+    text-align: center;
 }
 
 #artigo h2 {
     margin-top: 50px;
     font-size: 25px;
     font-weight: 500;
-    letter-spacing: -1;
+    /* letter-spacing: -1; */
     line-height: 36px;
     color: var(--color-gray-70);
 }
 
 #artigo p {
-    margin-top: 10px;
-    font-size: 20px;
+    margin-top: 40px;
+    font-size: 16px;
     font-weight: 500;
-    letter-spacing: -1;
-    line-height: 28px;
+    /* letter-spacing: -1; */
+    line-height: 1.65;
     color: var(--color-gray-50);
     text-align: justify;
+    text-indent: 50px;
 }
 
 
@@ -244,6 +246,7 @@ footer {
 @media (max-width: 768px) {
     main {
         width: 90%;
+        margin-top: 0;
     }
 
     article {
@@ -259,7 +262,7 @@ footer {
     }
 
     figure img {
-        height: 300px;
+        height: fit-content;
     }
 
     footer {
