@@ -8,8 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
-    <meta name="description" content="Blog pessoal de Wellington Vieira sobre tecnologia, programação e design de interfaces. Artigos práticos enquanto estudo, construo projetos e evoluo como desenvolvedor.">
-    <meta name="keywords" content="programação, desenvolvimento web, design de interfaces, UI, UX, tecnologia, blog pessoal, estudos em software">
+    <meta name="description"
+        content="Blog pessoal de Wellington Vieira sobre tecnologia, programação e design de interfaces. Artigos práticos enquanto estudo, construo projetos e evoluo como desenvolvedor.">
+    <meta name="keywords"
+        content="programação, desenvolvimento web, design de interfaces, UI, UX, tecnologia, blog pessoal, estudos em software">
     <meta name="author" content="Wellington Vieira">
     <meta name="robots" content="index, follow">
     <meta name="language" content="pt-BR">
@@ -17,7 +19,8 @@
 
     <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
     <meta property="og:title" content="Blog pessoal sobre tecnologia e programação | welldssvieira">
-    <meta property="og:description" content="Artigos e reflexões sobre programação, design de interfaces e aprendizado contínuo em tecnologia.">
+    <meta property="og:description"
+        content="Artigos e reflexões sobre programação, design de interfaces e aprendizado contínuo em tecnologia.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://welldssvieira.me">
     <meta property="og:image" content="https://welldssvieira.me/preview.png">
@@ -32,6 +35,11 @@
     <!-- Performance e UX -->
     <link rel="stylesheet" href="src/styles/main.css">
     <link rel="icon" href="/public/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Bibliotecas de animação -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 
@@ -40,7 +48,7 @@
         <section id="apresentacao">
             <header>
                 <div class="foto_usuario">
-                    <img src="/public/assets/images/foto_profissional.png" alt="Foto do Wellington, autor da página.">
+                    <img src="/public/assets/images/foto_profissional.png" alt="Foto do Wellington, autor da página." title="Wellington - Autor do Blog">
                 </div>
                 <div class="tag_agenda">
                     <span class="icone">
@@ -71,7 +79,7 @@
                 <h1>Artigos recentes</h1>
             </header>
 
-            <article onclick="mudarPagina() , visualizacoesArtigo()">
+            <article onclick="mudarPagina() , visualizacoesArtigo()" title="Clique para acessar o artigo." data-aos="fade-up">
                 <header>
                     <span class="tag">
                         Novo
@@ -134,6 +142,7 @@
             const visualizacaoLeitores = document.querySelector(".quantidade_visualizacoes p");
 
             ano.innerHTML = anoAtual.getFullYear();
+             AOS.init();
 
             // // Recupera o valor salvo ou inicia em 0
             // let totalVisualizacoes = Number(localStorage.getItem('totalVisualizacoes')) || 0;
@@ -157,8 +166,6 @@
             const artigo = document.getElementsByTagName('article')[0];
             window.location.href = '/src/pages/article_28_12_2025.html'
         }
-
-
 
     </script>
 </body>

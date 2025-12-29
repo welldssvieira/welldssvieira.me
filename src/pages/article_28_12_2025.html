@@ -12,7 +12,7 @@
 <body>
     <main>
         <div id="retornar">
-            <button class="button_voltar" onclick="retornarPagina()">
+            <button class="button_voltar" onclick="retornarPagina()" title="Clique para retornar.">
                 <img src="/public/assets/icon/Icone_setaVoltar.svg" alt="Voltar a página anterior.">
             </button>
         </div>
@@ -27,7 +27,7 @@
                     <div class="foto_usuario">
                         <img src="/public/assets/images/foto_profissional.png" alt="">
                     </div>
-                    <div class="informacoes">
+                    <div class="informacoes" title="Usuário verificado">
                         <div class="informacoes_autor">
                             <div class="nome_autor">
                                 <p>Wellington D.S Vieira</p>
@@ -49,13 +49,16 @@
         </header>
 
         <figure>
-            <img src="/public/assets/images/foto.png" alt="">
+            <div class="image-wrapper">
+                <img src="/public/assets/images/foto.png" alt="">
+            </div>
+            
             <figcaption>Descrição da imagem e créditos do autor</figcaption>
         </figure>
 
         <article id="artigo">
             <h2>É um fato comprovado que o leitor se distrai com o conteúdo legível.</h2>
-            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos. O Lorem Ipsum
+            <p id="teste">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos. O Lorem Ipsum
                 tem sido a simulação de texto padrão da indústria tipográfica e de impressos desde o século XVI, quando
                 um impressor desconhecido pegou uma galera de tipos e os embaralhou para criar um livro de espécimes de
                 tipos.</p>
@@ -106,6 +109,11 @@
             const botao = document.getElementsByClassName("button_voltar")[0];
             window.location.href = '/index.html'
         }
+
+
+
+
+        
     </script>
 </body>
 
