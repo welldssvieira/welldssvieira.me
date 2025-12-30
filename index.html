@@ -48,7 +48,8 @@
         <section id="apresentacao">
             <header>
                 <div class="foto_usuario">
-                    <img src="/public/assets/images/foto_profissional.png" alt="Foto do Wellington, autor da página." title="Wellington - Autor do Blog">
+                    <img src="/public/assets/images/foto_profissional.png" alt="Foto do Wellington, autor da página."
+                        title="Wellington - Autor do Blog">
                 </div>
                 <div class="tag_agenda">
                     <span class="icone">
@@ -79,7 +80,8 @@
                 <h1>Artigos recentes</h1>
             </header>
 
-            <article onclick="mudarPagina() , visualizacoesArtigo()" title="Clique para acessar o artigo." data-aos="fade-up">
+            <article onclick="mudarPagina() , visualizacoesArtigo()" title="Clique para acessar o artigo."
+                data-aos="fade-up">
                 <header>
                     <span class="tag">
                         Novo
@@ -133,7 +135,11 @@
             <!-- <button class="button_todosArtigos"> Todos os artigos </button> -->
         </section>
     </main>
-    <footer>© &nbsp; <span id="ano-atual">2025</span> &nbsp;Syncro Horizon. Todos os direitos reservados.</footer>
+
+    <footer>
+        <hr>
+        © &nbsp; <span id="ano-atual">2025</span> &nbsp;Syncro Horizon. Todos os direitos reservados.
+    </footer>
 
     <script>
         window.onload = function () {
@@ -142,7 +148,7 @@
             const visualizacaoLeitores = document.querySelector(".quantidade_visualizacoes p");
 
             ano.innerHTML = anoAtual.getFullYear();
-             AOS.init();
+            AOS.init();
 
             // // Recupera o valor salvo ou inicia em 0
             // let totalVisualizacoes = Number(localStorage.getItem('totalVisualizacoes')) || 0;

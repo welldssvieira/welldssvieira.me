@@ -38,7 +38,6 @@ hr {
     border: 1px solid var(--color-gray-20);
 }
 
-
 ::selection {
     background-color: #262626;
     color: #fff;
@@ -76,6 +75,10 @@ main {
     justify-content: start;
     flex-direction: column;
     width: 100%;
+}
+
+.apresentacao hr {
+    margin: 40px 0;
 }
 
 .foto_usuario,
@@ -143,9 +146,7 @@ main {
     text-align: left;
 }
 
-.apresentacao hr {
-    margin: 40px 0;
-}
+
 
 .apresentacao p {
     margin: 0;
@@ -162,7 +163,7 @@ main {
 
 article {
     border: 1px solid var(--color-gray-20);
-    padding: 30px 14px;
+    padding: 50px;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -259,6 +260,11 @@ footer {
     text-align: center;
     color: var(--color-gray-80);
     font-size: 14px;
+
+}
+
+footer hr {
+    margin-bottom: 43px;
 }
 
 
@@ -300,6 +306,9 @@ footer {
         padding: 16px;
     }
 
+    article {
+        padding: 30px 14px;
+    }
 
 
     .dado .icon img {
