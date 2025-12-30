@@ -162,7 +162,7 @@ main {
 
 article {
     border: 1px solid var(--color-gray-20);
-    padding: 50px;
+    padding: 30px 14px;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -258,6 +258,7 @@ footer {
     bottom: 0;
     text-align: center;
     color: var(--color-gray-80);
+    font-size: 14px;
 }
 
 
@@ -294,11 +295,13 @@ footer {
 
 @media (max-width: 768px) {
     main {
-        width: 90%;
+                width: 100%;
+        margin-top: 0;
+        padding: 16px;
     }
 
     article {
-        padding: 20px;
+        /* padding: 20px; */
     }
 
     .dado .icon img {
@@ -327,6 +330,6 @@ footer {
     .button_todosArtigos{ font-size: 15px;}
 
     footer {
-        width: 90%;
+       width: 100%;
     }
 }

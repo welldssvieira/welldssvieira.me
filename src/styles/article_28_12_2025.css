@@ -193,7 +193,7 @@ figure:hover img {
 }
 
 figcaption {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: -1px;
   line-height: 20px;
@@ -204,7 +204,7 @@ figcaption {
 
 #artigo h2 {
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 500;
     /* letter-spacing: -1; */
     line-height: 36px;
@@ -251,17 +251,19 @@ footer {
     bottom: 0;
     text-align: center;
     color: var(--color-gray-80);
+    font-size: 14px;
 }
 
 
 @media (max-width: 768px) {
     main {
-        width: 90%;
+        width: 100%;
         margin-top: 0;
+        padding: 16px;
     }
 
     article {
-        padding: 20px;
+        /* padding: 20px; */
     }
 
     .dado .icon img {
@@ -284,7 +286,7 @@ footer {
         display: none;
     }
     footer {
-        width: 90%;
+        width: 100%;
     }
 
 }
