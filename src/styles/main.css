@@ -253,7 +253,7 @@ article {
 
 
 footer {
-    width: 50%;
+    width: 100%;
     height: 100px;
     margin-top: 150px;
     position: relative;
@@ -262,7 +262,6 @@ footer {
     color: var(--color-gray-80);
     font-size: 14px;
     padding: 20px;
-
 }
 
 footer hr {
