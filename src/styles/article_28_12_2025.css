@@ -29,7 +29,7 @@ h2 {
     font-family: "Inter", sans-serif;
 }
 
-p {
+p, cite {
     color: var(--color-gray-50);
     font-family: "Inter", sans-serif;
 }
@@ -194,9 +194,10 @@ figure:hover img {
 }
 
 figcaption {
+    font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
   line-height: 20px;
   color: var(--color-gray-40);
   text-align: center;
@@ -222,6 +223,21 @@ figcaption {
     text-align: left;
 }
 
+blockquote {
+    margin-top: 40px;
+    border-left: 4px solid var(--brand-color-gray);
+    padding-left: 15px;
+}
+
+blockquote p{
+    margin-bottom: 12px
+}
+cite {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-gray-60);
+}
 
 #artigo .tags {
     display: flex;
@@ -253,7 +269,7 @@ footer {
     text-align: center;
     color: var(--color-gray-80);
     font-size: 14px;
-
+    padding: 20px;
 }
 
 footer hr {

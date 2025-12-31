@@ -159,6 +159,7 @@ main {
 
 #artigos_recentes {
     margin-top: 100px;
+    width: 100%;
 }
 
 article {
@@ -260,6 +261,7 @@ footer {
     text-align: center;
     color: var(--color-gray-80);
     font-size: 14px;
+    padding: 20px;
 
 }
 
