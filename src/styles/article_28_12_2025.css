@@ -29,7 +29,8 @@ h2 {
     font-family: "Inter", sans-serif;
 }
 
-p, cite {
+p,
+cite {
     color: var(--color-gray-50);
     font-family: "Inter", sans-serif;
 }
@@ -168,41 +169,75 @@ header .dados_artigo .tempo_leitura p {
     line-height: 20px;
     color: var(--color-gray-60);
 }
+
 figure {
-  display: flex;
-  flex-direction: column;
-  gap: 16px; /* espaço da legenda */
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    /* espaço da legenda */
+    width: 100%;
 }
 
 .image-wrapper {
-  width: 100%;
-  height: 350px;
-  overflow: hidden;
-  border-radius: 10px;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .image-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
 }
 
 figure:hover img {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 figcaption {
     font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  /* letter-spacing: -1px; */
-  line-height: 20px;
-  color: var(--color-gray-40);
-  text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    /* letter-spacing: -1px; */
+    line-height: 20px;
+    color: var(--color-gray-40);
+    text-align: center;
 }
 
+.transcricao_audio hr {
+    margin: 15px 0;
+}
+
+.transcricao_audio .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.transcricao_audio .main button {
+    border: 1px solid var(--color-gray-30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: var(--brand-color-gray);
+    background-color: white;
+}
+i.fa-pause {
+    display: none;
+}
+
+.transcricao_audio .main button i {
+        position: relative;
+    left: 1px;
+    top: 1px;
+}
 
 #artigo h2 {
     margin-top: 50px;
@@ -229,9 +264,10 @@ blockquote {
     padding-left: 15px;
 }
 
-blockquote p{
+blockquote p {
     margin-bottom: 12px
 }
+
 cite {
     font-style: normal;
     font-weight: 500;

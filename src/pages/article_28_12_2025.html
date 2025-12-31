@@ -7,6 +7,9 @@
     <meta name="description"
         content="Essa é uma página pessoal, destinada a compartilhar meus pensamentos em formato de artigo ao mesmo tempo em que eu estudo e melhoro minhas habilidades em programação e deisgn de interafaces.">
     <link rel="stylesheet" href="../styles/article_28_12_2025.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
     <title>Decidi recomeçar do zero</title>
 </head>
 
@@ -48,6 +51,21 @@
                     <p>4 min. de leitura</p>
                 </div>
             </div>
+            <div class="transcricao_audio">
+                <hr>
+                <div class="main">
+                    <div>
+                        <p>Transcrição em áudio</p>
+                        <audio src="trancricao_audio_article_28_12_2025.mp3"></audio>
+                    </div>
+
+                    <button title="Clique para ouvir" onclick="rodarTranscricao()">
+                        <i class="fa-solid fa-play"></i>
+                        <i class="fa-solid fa-pause IconPause"></i>
+                    </button>
+                </div>
+                <hr>
+            </div>
         </header>
 
         <figure>
@@ -62,12 +80,13 @@
 
             <h2>Introdução</h2>
 
-            <p>Recomeços sempre são difíceis, porque geralmente não levamos muita bagagem.Às vezes, nem sequer temos uma
+            <p>Recomeços sempre são difíceis, porque geralmente não levamos muita bagagem. Às vezes, nem sequer temos
+                uma
                 base para começar — o que pode significar estar sem emprego, sem apoio, sem dinheiro ou até sem qualquer
                 expectativa de futuro.</p>
 
             <p>Eu sei, parece estranho à primeira vista e, sinceramente, talvez você esteja certo(a).Recomeçar é o que
-                mais tenho feito. Ainda assim, não me faltam vontades todos os dias. Seguindo a lógica de Dante:</p>
+                mais tenho feito. Ainda assim, não me faltam vontades todos os dias.</p>
 
             <blockquote>
                 <p>“A vontade, se não quer, não cede; é como a chama ardente, que se eleva com mais força quanto mais se
@@ -99,7 +118,7 @@
             <blockquote>
                 <p>“Penso, logo existo.”</p>
                 <cite>René Descartes</cite>
-            </blockquote>   
+            </blockquote>
 
             <p>Dessa forma, percebi novamente que precisava recomeçar. E, entre todas as ideias que já tive, nenhuma
                 pareceu tão sólida quanto esta. Este blog pessoal é um dos meus projetos mais antigos, mas, de repente,
@@ -153,6 +172,42 @@
             const botao = document.getElementsByClassName("button_voltar")[0];
             window.location.href = '/index.html'
         }
+
+        // function rodarTranscricao() {
+        //     const audio = document.querySelector(".transcricao_audio audio");
+        //     const iconePlay = document.querySelector(".transcricao_audio .main i.fa-play");
+        //     const iconePause = document.querySelector(".transcricao_audio .main i.fa-pause");
+
+        //     audio.play();
+
+
+        //     if (audio.play()) {
+        //         iconePause.style.display = "block";
+        //         iconePlay.style.display = "none";
+        //     } else if (audio.paused()) {
+        //         iconePause.style.display = "none";
+        //         iconePlay.style.display = "block";
+        //     }
+
+           
+
+        // }
+
+         function rodarTranscricao() {
+    const audio = document.querySelector(".transcricao_audio audio");
+    const iconePlay = document.querySelector(".transcricao_audio .main i.fa-play");
+    const iconePause = document.querySelector(".transcricao_audio .main i.fa-pause");
+
+    if (audio.paused) {
+        audio.play();
+        iconePause.style.display = "block";
+        iconePlay.style.display = "none";
+    } else {
+        audio.pause();
+        iconePause.style.display = "none";
+        iconePlay.style.display = "block";
+    }
+}
 
     </script>
 </body>
