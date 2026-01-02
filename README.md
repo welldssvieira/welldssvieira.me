@@ -1,4 +1,5 @@
 # Blog Pessoal
+[![Deploy](https://img.shields.io/badge/DEPLOY-acessar%20site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://welldssvieira.me)
 
 <img src="banner.jpg" alt="Captura de tela do blog pessoal.">
 
