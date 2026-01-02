@@ -31,7 +31,7 @@ O blog é **estático**, leve, sem frameworks, e prioriza **clareza, performance
 ## Estrutura do Projeto
 
 - HTML semântico  
-- CSS customizado (sem bibliotecas de UI)  
+- CSS customizado
 - JavaScript para interações simples  
 - SEO manual via meta tags  
 - Open Graph e Twitter Cards configurados  
@@ -82,13 +82,13 @@ Nenhuma dependência externa obrigatória.
 Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/welldssvieira/welldssvieira.me.git
 ````
 
 Acesse a pasta do projeto:
 
 ```bash
-cd nome-do-projeto
+cd welldssvieira.me
 ```
 
 Abra o arquivo `index.html` diretamente no navegador
