@@ -267,6 +267,10 @@ footer hr {
     margin-bottom: 43px;
 }
 
+footer p {
+    padding: 20px;
+}
+
 
 
 
@@ -339,7 +343,7 @@ footer hr {
         font-size: 15px;
     }
 
-    #artigo .tags .tag {
+    #artigos_recentes .tags .tag{
         font-size: 10px;
         padding: 2px 10px;
     }
