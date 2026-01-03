@@ -45,17 +45,12 @@ Não há backend, banco de dados ou build step neste momento.
 
 - 📄 Página inicial com apresentação pessoal  
 - 📰 Listagem de artigos recentes  
-- 🧠 Conteúdo focado em aprendizado e reflexão  
-- 🎨 Design minimalista e limpo  
 - 📱 Layout responsivo  
 - 🔍 SEO básico configurado manualmente  
-- 🌐 Open Graph e Twitter Cards  
-- ⚡ Site leve e rápido (HTML + CSS + JS)  
 
 Funcionalidades em estudo / futuras:
 - Contador de visualizações por artigo  
 - Cálculo automático de tempo de leitura  
-- Página com listagem completa de artigos  
 - Melhorias de tipografia e espaçamentos  
 - Organização de conteúdo por tags  
 
