@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-color-gray: #262626;
+    --color-gray-90: #2A2A2A;
+    --color-gray-80: #404040;
+    --color-gray-70: #595959;
+    --color-gray-60: #737373;
+    --color-gray-50: #8C8C8C;
+    --color-gray-40: #A6A6A6;
+    --color-gray-30: #BFBFBF;
+    --color-gray-20: #f5f5f5;
+    --color-gray-10: #ffffff;
+}
+
+h1 {
+    color: var(--brand-color-gray);
+    font-family: "Geist", sans-serif;
+}
+
+h2 {
+    color: var(--color-gray-70);
+    font-family: "Inter", sans-serif;
+}
+
+h3{
+    color: var(--color-gray-50);
+    font-family: "Inter", sans-serif;
+    margin: 40px 0;
+}
+
+a {
+    color: var(--color-gray-50);
+    font-family: "Inter", sans-serif;
+    text-decoration: underline;
+}
+
+ol {
+    padding: 16px;
+    color: var(--color-gray-50);
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+p,
+cite {
+    color: var(--color-gray-50);
+    font-family: "Inter", sans-serif;
+}
+
+hr {
+    border: 1px solid var(--color-gray-20);
+}
+
+
+::selection {
+    background-color: #262626;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Geist", sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#retornar {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.button_voltar {
+    width: 55px;
+    height: 55px;
+    border: 1px solid var(--color-gray-20);
+    background-color: var(--color-gray-10);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+header .titulos h1 {
+    font-size: 40;
+    font-weight: 600;
+    letter-spacing: -2px;
+    line-height: 46px;
+}
+
+header .titulos h2 {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 30px;
+}
+
+header .dados_artigo {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+header .dados_artigo .autor {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+header .dados_artigo .autor .foto_usuario,
+header .dados_artigo .autor .foto_usuario img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+header .dados_artigo .autor .informacoes {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+header .dados_artigo .autor .informacoes_autor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .dados_artigo .autor .selo_verificado {
+    display: flex;
+    align-items: start;
+    justify-items: start;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+header .dados_artigo .autor .selo_verificado img {
+    width: 15px;
+}
+
+header .dados_artigo .autor .informacoes_autor p {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 25px;
+    color: var(--color-gray-80);
+}
+
+header .dados_artigo .autor .data_publicacao p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 20px;
+    color: var(--color-gray-60);
+}
+
+header .dados_artigo .tempo_leitura p {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 20px;
+    color: var(--color-gray-60);
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    /* espaço da legenda */
+    width: 100%;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+}
+
+figure:hover img {
+    transform: scale(1.2);
+}
+
+figcaption {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    /* letter-spacing: -1px; */
+    line-height: 20px;
+    color: var(--color-gray-40);
+    text-align: center;
+}
+
+.transcricao_audio hr {
+    margin: 15px 0;
+}
+
+.transcricao_audio .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.transcricao_audio .main button {
+    border: 1px solid var(--color-gray-30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: var(--brand-color-gray);
+    background-color: white;
+}
+i.fa-pause {
+    display: none;
+}
+
+.transcricao_audio .main button i {
+        position: relative;
+    left: 1px;
+    top: 1px;
+}
+
+#artigo h2 {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 36px;
+    color: var(--color-gray-70);
+}
+
+#artigo p {
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    /* letter-spacing: -1; */
+    line-height: 1.65;
+    color: var(--color-gray-50);
+    text-align: left;
+}
+
+blockquote {
+    margin-top: 40px;
+    border-left: 4px solid var(--brand-color-gray);
+    padding-left: 15px;
+}
+
+blockquote p {
+    margin-bottom: 12px
+}
+
+cite {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-gray-60);
+}
+
+#artigo .tags {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 40px 0 0 0;
+}
+
+#artigo .tags .tag {
+    margin-right: 10px;
+    border-radius: 50px;
+    border: 1px solid var(--color-gray-30);
+    padding: 2px 15px;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    color: var(--color-gray-50);
+    margin: 5px 5px 5px 0;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    margin-top: 150px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    color: var(--color-gray-80);
+    font-size: 14px;
+}
+
+footer hr {
+    margin-bottom: 43px;
+}
+
+footer p {
+    padding: 20px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+        margin-top: 0;
+        padding: 16px;
+    }
+
+
+    .dado .icon img {
+        width: 20px;
+    }
+
+    .dado p {
+        font-size: 12px;
+    }
+
+    figure img {
+        height: auto;
+    }
+
+    .image-wrapper {
+        height: 170px;
+    }
+
+    .tempo_leitura {
+        display: none;
+    }
+
+    #artigo .tags .tag {
+        font-size: 10px;
+        padding: 2px 10px;
+    }
+
+}

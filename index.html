@@ -80,12 +80,64 @@
                 <h1>Artigos recentes</h1>
             </header>
 
-            <article onclick="mudarPagina() , visualizacoesArtigo()" title="Clique para acessar o artigo."
-                data-aos="fade-up">
+            <article data-link="/src/pages/article_04_01_2026.html" onclick="mudarPagina()"
+                title="Clique para acessar o artigo." data-aos="fade-up">
                 <header>
                     <span class="tag">
                         Novo
                     </span>
+                    <div class="titulo_artigo">
+                        <h2>Simplificar para conquistar</h2>
+                    </div>
+                </header>
+
+                <div class="dados_artigo">
+                    <div class="dado">
+                        <div class="icon">
+                            <img src="public/assets/icon/Icone_calendar.svg" alt="Data de publicação">
+                        </div>
+                        <div class="data_publicacao">
+                            <p>Janeiro 04, 2026</p>
+                        </div>
+                    </div>
+                    <div class="dado">
+                        <div class="icon">
+                            <img src="public/assets/icon/Icone_timer.svg" alt="Tempo de leitura">
+                        </div>
+                        <div class="tempo_leitura">
+                            <p>7 min. de leitura</p>
+                        </div>
+                    </div>
+                    <!-- <div class="dado">
+                        <div class="icon">
+                            <img src="public/assets/icon/Icone_visualizacoes.svg" alt="Quantidade de visualizações">
+                        </div>
+                        <div class="quantidade_visualizacoes">
+                            <p>0 visualizações</p>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="tags">
+                    <span class="tag">
+                        Recomeço
+                    </span>
+                    <span class="tag">
+                        Organização
+                    </span>
+                    </span>
+                    <span class="tag">
+                        Minimalismo
+                    </span>
+                </div>
+            </article>
+
+            <article data-link="/src/pages/article_28_12_2025.html" onclick="mudarPagina()"
+                title="Clique para acessar o artigo." data-aos="fade-up">
+                <header>
+                    <!-- <span class="tag">
+                        Novo
+                    </span> -->
                     <div class="titulo_artigo">
                         <h2>Decidi recomeçar do zero</h2>
                     </div>
@@ -138,7 +190,7 @@
 
     <footer>
         <hr>
-       <p> © &nbsp; <span id="ano-atual">2025</span> &nbsp;Syncro Horizon. Todos os direitos reservados.</p>
+        <p> © &nbsp; <span id="ano-atual">2025</span> &nbsp;Syncro Horizon. Todos os direitos reservados.</p>
     </footer>
 
     <script>
@@ -169,8 +221,13 @@
 
 
         function mudarPagina() {
-            const artigo = document.getElementsByTagName('article')[0];
-            window.location.href = '/src/pages/article_28_12_2025.html'
+            const artigos = document.querySelectorAll('article');
+
+            artigos.forEach(artigo => {
+                artigo.addEventListener('click', () => {
+                    window.location.href = artigo.dataset.link;
+                });
+            });
         }
 
     </script>
